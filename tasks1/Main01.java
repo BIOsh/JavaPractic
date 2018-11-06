@@ -1,6 +1,5 @@
 package ru.dvfu.KomysovPV.tasks1;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.util.Scanner;
 
 public class Main01 {
