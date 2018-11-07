@@ -22,6 +22,8 @@ public class Stepen {
 
     }
 
+    // Метод возведения в степень
+
     private static int power(int x, int n) {
 
         int z = 1;
