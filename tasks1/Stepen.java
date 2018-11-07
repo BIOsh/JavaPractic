@@ -10,13 +10,13 @@ public class Stepen {
 
         System.out.print("Введите число: ");
 
-        int a = in.nextInt();
+        float a = in.nextFloat();
 
         System.out.print("Введите степень: ");
 
-        int b = in.nextInt();
+        float b = in.nextFloat();
 
-        int c = power(a, b);
+        float c = power(a, b);
 
         System.out.print("Результат: " + c);
 
@@ -24,17 +24,32 @@ public class Stepen {
 
     // Метод возведения в степень
 
-    private static int power(int x, int n) {
+    private static float power(float x, float n) {
 
-        int z = 1;
+        float z = 1;
 
-        for (int i = 1; i <= n; i++) {
+        if (n > 0) {
 
-            z = z * x;
+            for (float i = 1; i <= n; i++) {
+
+                z *= x;
+
+            }
+
+        }
+
+        else {
+
+            for (float i = -1; i >= n; i--) {
+
+                z /= x;
+
+            }
 
         }
 
         return z;
+
     }
 
 }
